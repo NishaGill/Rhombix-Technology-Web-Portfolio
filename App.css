@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Common Heading Style */
+h2 {
+  margin-top: 40px;
+  color: #2c3e50;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Paragraph Style */
+p {
+  color: #444;
+  line-height: 1.6;
+}
+
+/* Section Spacing */
+section {
+  margin-bottom: 40px;
+}
+
+/* General Background Gradient */
+
+
+.background-heading,
+.intro-heading,
+.projects-heading,
+.blog-heading,
+.contact-heading,
+.achievements-heading,
+.skills-heading,
+.experience-heading {
+  font-size: 2.5em;
+  color: #e7eeeee8; /* Lightened color for better contrast */
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+/* Card and List Item Style */
+.achievement-item,
+.blog-item a,
+.project-card,
+.skill-item,
+.experience-card {
+  background: #ffffffd8;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 15px 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  font-family: 'Roboto', sans-serif;
+}
+
+.achievement-item:hover,
+.blog-item a:hover,
+.project-card:hover,
+.skill-item:hover,
+.experience-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Specific Section Gradients */
+.achievements,
+.projects,
+.blog,
+.background,
+.contact,
+.introduction,
+.experience,
+.skills {
+  background: linear-gradient(135deg, #43cea2, #185a9d); 
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  max-width: 900px;
+  margin: 50px auto;
+  
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.project-title,
+.experience-title,
+.intro-text,
+.contact-info {
+  color: #0e0d0d;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+
+/* Contact Links */
+.contact-info a {
+  color: #ff8c00; /* Changed to a vibrant orange */
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.contact-info a:hover {
+  color: #ff6500; /* Darker shade of orange on hover */
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 600px) {
+  .background-heading,
+  .intro-heading,
+  .projects-heading,
+  .blog-heading,
+  .contact-heading,
+  .achievements-heading,
+  .skills-heading,
+  .experience-heading {
+    font-size: 2em;
+  }
+
+  .achievement-item,
+  .project-card,
+  .skill-item,
+  .experience-card,
+  .intro-text,
+  .contact-info {
+    font-size: 0.95em;
+    padding: 15px;
+  }
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
